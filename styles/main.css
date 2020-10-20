@@ -1,0 +1,255 @@
+.container-fluid img {
+    width: 100%;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(236, 235, 235);
+}
+
+.logo {
+    padding: 4px;
+    padding-bottom: 6.5px;
+    margin-right: 8px;
+}
+
+.header-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4rem;
+}
+
+.title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3.5rem;
+}
+
+.header-p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.separador {
+    margin-bottom: 33px;
+}
+
+.section-container {
+    margin-top: 36px;
+}
+
+.contact {
+    margin: 0;
+    padding: 10px;
+}
+
+
+/* Container needed to position the button. Adjust the width as needed */
+.container-img {
+    position: relative;
+    width: 50%;
+    margin-top: 5px;
+    max-height: 350px;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container-img .btn-showMore {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+}
+
+.modal-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease;
+}
+
+.modal-overlay .slideshow {
+    width: 80%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, .9);
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.carousel-item {
+    height: 90vh;
+}
+
+.btn-cerrar {
+    position: absolute;
+    z-index: 40000;
+    top: -15px;
+    right: -15px;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, .7);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: -2px;
+    padding-bottom: 3px;
+    transition: all .2s ease;
+}
+
+.btn-cerrar:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.columna {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.columna img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .3s ease;
+}
+
+.columna img:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+}
+
+
+.vista {
+    display: none;
+}
+
+.navbar {
+    background-color: brown;
+}
+
+.container-principal {
+    padding: 5px;
+}
+
+.btnes {
+    background-color: brown;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    color: white;
+}
+
+footer {
+    background-color: brown;
+}
+
+footer p {
+    color: white;
+}
+
+.img_viewphone {
+    display: none;
+}
+
+.img_viewpc {
+    display: block;
+}
+
+.main-img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all .5s ease;
+    opacity: 0.8;
+}
+
+.main-img {
+    transition: all .5s ease;
+
+}
+
+
+@media screen and (max-width: 620px) {
+    .img_viewpc {
+        display: none;
+    }
+
+    .img_viewphone {
+        display: block;
+    }
+
+    .slideshow {
+        height: 70% !important;
+        width: 95% !important;
+        align-items: center !important;
+    }
+
+    .chalettxt {
+        order: 1;
+    }
+
+    .chaletimg {
+        order: 2;
+    }
+
+    .btn-container .btnes {
+        order: 3;
+    }
+
+    .btn-container {
+        text-align: center;
+        margin: 15px;
+    }
+
+    .title {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 2.5rem;
+    }
+}
